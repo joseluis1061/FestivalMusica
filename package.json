@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/joseluis1061/FestivalMusica/issues"
   },
-  "homepage": "https://github.com/joseluis1061/FestivalMusica#readme"
+  "homepage": "https://github.com/joseluis1061/FestivalMusica#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  }
 }
