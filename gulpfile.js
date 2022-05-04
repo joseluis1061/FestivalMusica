@@ -5,7 +5,7 @@
 // }
 // exports.nuevaTarea=nuevaTarea;
 
-//162?
+
 //src:source, dest: destination, watch
 const{src, dest, watch} = require('gulp');
 //Requiere el puente entre gulp-sass y la libreria de sass
@@ -25,8 +25,8 @@ function css(done){
 
 //Función para agregar cambios automaticos
 function dev(done){
-    //Requiere un destino a estar atento y la función
-    //que se ejecuta similar a un evento
+    //Requiere un archivo a estar atento a cambios y la función
+    //que se ejecuta. Similar a un evento.
     watch('src/scss/app.scss',css);
     done();
 }
