@@ -1,11 +1,3 @@
-// function nuevaTarea(done){
-//     console.log("Ejecutando nueva tarea");
-//     //Como es un callback requiere una función que indique que termino
-//     done();
-// }
-// exports.nuevaTarea=nuevaTarea;
-
-
 //src:source, dest: destination, watch
 const{src, dest, watch} = require('gulp');
 //Requiere el puente entre gulp-sass y la libreria de sass
@@ -18,7 +10,7 @@ function css(done){
     //Identificar la cartpeta de orignen de estilos
     src("src/scss/**/*.scss")
     // Evitar el cierre por errores
-        pipe(plumber())
+        .pipe(plumber())
     //Compilarla.. pipe para una tarea secuencial
         .pipe(sass())
     //Almacenar la salida en estilos con extensión css 
