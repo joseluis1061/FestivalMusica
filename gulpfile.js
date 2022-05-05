@@ -14,14 +14,12 @@ const sass = require('gulp-sass')(require('sass'));
 //Función para compilar scss a salida css
 function css(done){
     //Identificar la cartpeta de orignen de estilos
-    src("src/scss/app.scss")
+    src("src/scss/**/*.scss")
     //Compilarla.. pipe para una tarea secuencial
         .pipe(sass())
     //Almacenar la salida en estilos con extensión css 
         .pipe(dest("build/css"))
-    
-    console.log("Compilando...")
-    
+   
     done();
 }
 
@@ -29,7 +27,7 @@ function css(done){
 function dev(done){
     //Requiere un archivo a estar atento a cambios y la función
     //que se ejecuta. Similar a un evento.
-    watch('src/scss/app.scss',css);
+    watch("src/scss/**/*.scss",css);
     done();
 }
 
