@@ -20,6 +20,8 @@ function css(done){
     //Almacenar la salida en estilos con extensión css 
         .pipe(dest("build/css"))
     
+    console.log("Compilando...")
+    
     done();
 }
 
