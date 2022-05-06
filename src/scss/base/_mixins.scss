@@ -1,0 +1,29 @@
+@use 'variables' as var;
+//Funciones para aplicar mediaQuery
+@mixin phone {
+    @media (min-width:var.$phone) {
+        //Aqui se agregan las propiedades
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:var.$tablet) {
+        //Aqui se agregan las propiedades
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width:var.$desktop) {
+        //Aqui se agregan las propiedades
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width:var.$desktopXL) {
+        //Aqui se agregan las propiedades
+        @content;
+    }
+}
